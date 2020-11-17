@@ -196,7 +196,9 @@ a.nav-link{
 	flex-direction: column;
 	margin: 20px;
 	width: 200px;
+	cursor: pointer;
 	height:250px;
+	transition: all 0.3s;
 	border-radius:12px;
     background:var(--main-decor-color);
 }
@@ -220,12 +222,9 @@ a.nav-link{
 	text-decoration: none;
 }
 
-.card .work-content:hover{
-    color:#202020;
-}
-
 .card:hover{
 	box-shadow: 0 0 1.5rem gray;
+	color: #202020 !important;
 }
 
 /*──────────────────
