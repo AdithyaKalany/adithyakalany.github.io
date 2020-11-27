@@ -34,4 +34,23 @@ const navSlide = () => {
 	 
 	}
 
+setInterval(async ()=>{
+  var section = location.hash
+
+  var name = section.replace('#', '')
+  
+  var active = document.getElementsByClassName('nav-link')
+
+  for(i = 0; i < active.length; i++){
+    var a = active[i]
+
+    if(a.classList.contains('active')){
+      a.classList.remove('active')
+    }
+  }
+
+  var element = document.getElementById(`link-${name}`).classList.add('active')
+
+
+}, 01)
 window.onload = () => navSlide();
